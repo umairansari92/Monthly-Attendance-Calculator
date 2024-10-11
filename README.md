@@ -37,7 +37,7 @@ Average Attendance: 95.00%
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/attendance-calculator.git
+    git clone [https://github.com/your-username/attendance-calculator.git](https://github.com/umairansari92/Monthly-Attendance-Calculator.git)
     ```
 
 2. Open the project folder and launch `index.html` in your browser.
@@ -62,7 +62,11 @@ License
 This project is open-source and available under the MIT License.
 
 Contact
-For any queries or suggestions, please contact: [Umair Ahmed] - [+923138624722]
+For any queries or suggestions, please contact:
+
+Umair Ahmed
+Email: umair.ansari.92@gmail.com
+Mobile/WhatsApp: +923138624722
 
 ### Key Sections:
 1. **Features**: Highlights the functionality of the app.
