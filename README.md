@@ -26,6 +26,7 @@ A simple and responsive web application that calculates the average attendance o
 The result will show:
 Average Attendance: 95.00%
 
+
 ## Technology Stack
 
 - **HTML**: Structure and layout of the application.
@@ -37,7 +38,7 @@ Average Attendance: 95.00%
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone [https://github.com/your-username/attendance-calculator.git](https://github.com/umairansari92/Monthly-Attendance-Calculator.git)
+    git clone https://github.com/umairansari92/Monthly-Attendance-Calculator.git
     ```
 
 2. Open the project folder and launch `index.html` in your browser.
@@ -47,12 +48,13 @@ No dependencies or installations are required. The app runs purely on client-sid
 ## Repository Structure
 
 ```bash
-attendance-calculator/
+monthly-attendance-calculator/
 │
 ├── index.html      # Main HTML file
 ├── styles.css      # External CSS for styling
 ├── script.js       # External JavaScript for functionality
 └── README.md       # Project overview and instructions
+
 Screenshots
 
 Contributing
