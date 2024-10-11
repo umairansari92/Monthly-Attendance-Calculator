@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Attendance Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <div class="container" id="themeContainer">
+        <h1>Attendance Calculator</h1>
+        <div class="form-group">
+            <label for="totalStudents">Total Students:</label>
+            <input type="number" id="totalStudents" placeholder="Enter Total Students">
+        </div>
+        <div class="form-group">
+            <label for="workingDays">Total Working Days:</label>
+            <input type="number" id="workingDays" placeholder="Enter Total Working Days">
+        </div>
+        <div class="form-group">
+            <label for="totalAttendance">Total Attendance:</label>
+            <input type="number" id="totalAttendance" placeholder="Enter Total Attendance">
+        </div>
+
+        <!-- Result Section -->
+        <div class="form-group">
+            <label for="resultArea">Average Attendance of the Month:</label>
+            <textarea id="resultArea" placeholder="Result will be displayed here" readonly></textarea>
+        </div>
+
+        <button onclick="calculateAttendance()">Calculate Average Attendance</button>
+
+        <!-- Dark Mode Toggle Button -->
+        <!-- <div class="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Dark Mode</button>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
