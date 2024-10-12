@@ -35,8 +35,21 @@ function calculateAttendance() {
     resultArea.value = `Average Attendance: ${averageAttendance.toFixed(2)}%`;
 }
 
-// Dark Mode Toggle Functionality
-function toggleTheme() {
-    const container = document.getElementById('themeContainer');
-    container.classList.toggle('dark-mode');
+// Function to generate raindrops
+function createRaindrops() {
+    const raindropCount = 100; // Number of raindrops
+    const body = document.querySelector('body');
+
+    for (let i = 0; i < raindropCount; i++) {
+        const raindrop = document.createElement('div');
+        raindrop.classList.add('raindrop');
+        raindrop.style.left = Math.random() * 100 + 'vw'; // Random position on x-axis
+        raindrop.style.animationDelay = Math.random() * 2 + 's'; // Random delay
+        raindrop.style.opacity = Math.random(); // Random opacity for some raindrops
+
+        body.appendChild(raindrop);
+    }
 }
+
+// Call the function to create raindrops
+createRaindrops();

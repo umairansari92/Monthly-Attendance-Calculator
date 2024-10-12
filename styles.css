@@ -1,25 +1,28 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000000;
     margin: 0;
     padding: 0;
+    overflow: hidden; /* To hide overflow from falling drops */
 }
 
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: white;
+    background-color: rgb(65, 57, 57);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(117, 107, 107, 0.1);
     transition: all 0.3s ease-in-out;
+    z-index: 1; /* Ensure form stays above the raindrops */
+    position: relative;
 }
 
 h1 {
     text-align: center;
     font-size: 28px;
-    color: #333;
+    color: #a18080;
     margin-bottom: 20px;
 }
 
@@ -31,7 +34,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
-    color: #555;
+    color: #967575;
 }
 
 input[type="number"],
@@ -54,8 +57,8 @@ textarea:focus {
 button {
     width: 100%;
     padding: 12px 15px;
-    background-color: #28a745;
-    color: white;
+    background-color: #4d5a50;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     border: none;
     border-radius: 10px;
@@ -64,12 +67,63 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #7ca585;
+    font-size: 20px;
 }
 
 textarea {
     height: 80px;
     resize: none;
+}
+
+/* Rain Drop Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Raindrops Style */
+.raindrop {
+    position: absolute;
+    top: -10vh;
+    width: 3px;
+    height: 10px;
+    background: linear-gradient(to bottom, skyblue, white);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: fall 3s infinite linear;
+}
+
+.raindrop:nth-child(2n) {
+    width: 2px;
+    height: 6px;
+    animation-duration: 4s;
+}
+
+.raindrop:nth-child(3n) {
+    width: 4px;
+    height: 12px;
+    animation-duration: 2.5s;
+}
+
+.raindrop:nth-child(5n) {
+    width: 3px;
+    height: 9px;
+    animation-duration: 3.5s;
+}
+
+.raindrop:nth-child(odd) {
+    background: linear-gradient(to bottom, white, skyblue);
+    opacity: 0.8;
 }
 
 /* Responsive Styles */
